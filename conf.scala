@@ -8,7 +8,6 @@
 //> using lib "com.softwaremill.sttp.client3::async-http-client-backend-cats:3.8.11"
 //> using lib "com.softwaremill.sttp.client3::async-http-client-backend-fs2:3.8.11"
 
-
 // sttp 4
 //> using repository "sonatype:snapshots"
 //> using lib "ch.epfl.scala.sttp.client4::core:4.0.0-12c7f96d-SNAPSHOT"

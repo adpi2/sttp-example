@@ -67,8 +67,7 @@ val logBackend4 = ScribeLoggingBackend(backend4)
 // Generic customization of requests
 
 def addCommonSettings[R <: RequestBuilder[R]](request: R): R =
-  request
-    .auth
+  request.auth
     .basic("user", "password")
     .cookies("foo" -> "bar")
     .maxRedirects(2)

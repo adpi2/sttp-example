@@ -25,12 +25,12 @@ val streamRequest = basicRequest.post(uri"...").streamBody(Fs2Streams[IO])(strea
 val wsStreamRequest = basicRequest
   .post(uri"...")
   .streamBody(Fs2Streams[IO])(stream)
-  // .response(asWebSocketAlways(useWebSocket))
+// .response(asWebSocketAlways(useWebSocket))
 
 // Backends
 
 val backend1 = HttpClientCatsBackend.stub[IO]
-val backend2= HttpClientFs2Backend.stub[IO]
+val backend2 = HttpClientFs2Backend.stub[IO]
 
 // Responses
 

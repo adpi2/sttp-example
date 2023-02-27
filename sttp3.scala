@@ -9,7 +9,6 @@ import sttp.ws.WebSocket
 import sttp.client3.logging.LoggingBackend
 import sttp.client3.logging.scribe.ScribeLoggingBackend
 
-
 // Requests
 
 val request1 = basicRequest
@@ -68,9 +67,8 @@ val logBackend4 = ScribeLoggingBackend(backend4)
 
 // Generic customization of requests
 
-def addCommonSettings[T, R](request: Request[T, R] ): Request[T, R] =
-  request
-    .auth
+def addCommonSettings[T, R](request: Request[T, R]): Request[T, R] =
+  request.auth
     .basic("user", "password")
     .cookies("foo" -> "bar")
     .maxRedirects(2)

@@ -50,4 +50,3 @@ val wsStreamRespsone2 = wsStreamRequest.send(backend2)
 
 val logBackend1 = ScribeLoggingBackend(backend1)
 val logBackend2 = ScribeLoggingBackend(backend2)
-
